@@ -1,0 +1,55 @@
+ #List of zodiac signs
+rashis = [
+    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
+]
+
+# Professional astrology-style lines
+house_lines = {
+
+    1: "Today the Moon is in your 1st house, boosting confidence and positivity.",
+
+    2: "Today the Moon is in your 2nd house, bringing ups and downs in finances and family matters.",
+
+    3: "Today the Moon is in your 3rd house, increasing courage and bringing new opportunities.",
+
+    4: "Today the Moon is in your 4th house, which may disturb mental peace.",
+
+    5: "Today the Moon is in your 5th house, causing restlessness and lack of focus.",
+
+    6: "Today the Moon is in your 6th house, helping you overcome enemies and succeed in competition.",
+
+    7: "Today the Moon is in your 7th house, improving relationships and partnerships.",
+
+    8: "Today the Moon is in your 8th house, so stay cautious about health and sudden issues.",
+
+    9: "Today the Moon is in your 9th house, bringing luck and chances of travel.",
+
+    10: "Today the Moon is in your 10th house, bringing success and recognition in career.",
+
+    11: "Today the Moon is in your 11th house, increasing income and fulfilling desires.",
+
+    12: "Today the Moon is in your 12th house, leading to expenses and mental stress."
+}
+
+# Input Moon sign
+moon_sign = input("Enter today's Moon sign: ")
+
+moon_index = rashis.index(moon_sign)
+
+print("\n🌙 Daily Horoscope:\n")
+
+# Generate predictions for all zodiac signs
+for rashi in rashis:
+    rashi_index = rashis.index(rashi)
+
+    # House calculation
+    house = (moon_index - rashi_index) % 12 + 1
+
+    # Final combined prediction
+    final_prediction = house_lines[house] + " " + house_predictions[house]
+
+    print("🔮 Zodiac:", rashi)
+    print("🏠 Moon in:", house, "house")
+    print("✨ Prediction:", final_prediction)
+    print("----------------------")
