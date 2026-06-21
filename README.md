@@ -40,7 +40,7 @@ The calculator sums the values of all letters in the input name and returns the 
 
 This project is intended for educational and entertainment purposes. Chaldean numerology is a traditional belief system and is not scientifically validated.
 
-# 🔮 Numerology & Horoscope Calculator
+# 🔮 Report Numerology
 
 A comprehensive numerology and horoscope calculator that generates a personalized report based on a user's **name** and **date of birth**. The application combines multiple numerology systems to provide meaningful insights and recommendations.
 
@@ -93,7 +93,7 @@ An intelligent daily prediction module that generates personalized insights usin
 * Suggests auspicious activities based on Kua Number
 * Provides daily guidance for work, study, travel, and personal growth
 
-### ♈ Daily Rashifal (12 Zodiac Signs)
+### ♈ Horoscope
 
 Generates daily predictions for all 12 zodiac signs:
 
